@@ -1,0 +1,6 @@
+version: '2'
+services:
+  hotel-booking-api:
+    build: ./
+    ports:
+      - "3001:3001"

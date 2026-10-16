@@ -1,0 +1,15 @@
+{
+    "name": "hotel-booking-api",
+    "version": "1.0.0",
+    "description": "API documentation for the Hotel Booking API. This document is the <strong>source of truth</strong> for expected behaviour: any difference between it and the running API is a bug.",
+    "title": "Hotel Booking API",
+    "url": "http://localhost:3001/",
+    "order": [
+        "GetReservations",
+        "GetReservation",
+        "CreateReservation",
+        "UpdateReservation",
+        "PartialUpdateReservation",
+        "DeleteReservation"
+    ]
+}
