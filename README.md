@@ -139,3 +139,46 @@ Full request/response examples for every endpoint are in `/apidoc`
 
 `mocha`, `chai` and `supertest` are installed as dev dependencies. Put your
 specs in `tests/` and run `npm test`.
+
+## QA Test Deliverables
+
+This QA assignment includes the following test artifacts:
+
+- `tests/api.test.js` — automated API tests.
+- `test-cases.md` — test scenarios, steps and expected results.
+- `bug-reports.md` — documented defects with reproduction steps and impact.
+- `test-results.md` — test execution summary and findings.
+
+- Manual API testing was performed using Postman. The tested scenarios and results are documented in `test-cases.md` and `test-results.md`.
+
+### Running the automated tests
+
+Install dependencies:
+
+```powershell
+npm install
+```
+
+Run the automated test suite:
+
+```powershell
+$env:SEED = "true"
+npx mocha .\tests\api.test.js
+```
+
+Alternatively, run the configured test script:
+
+```powershell
+npm test
+```
+
+### Current test status
+
+The recorded execution produced the following results:
+
+- Total tests: 8
+- Passed: 5
+- Failed: 3
+- Defects identified: 3
+
+The failing tests document discrepancies between the actual API responses and the expected behavior defined in this README. They are retained as regression checks and should not be changed simply to make the test suite pass.
